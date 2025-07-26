@@ -76,6 +76,7 @@
 // }
 
 import { useRef, useState } from "react";
+// @ts-ignore
 import { CrossIcon } from "../Icons/CrossIcon";
 import { Button } from "./Button";
 import { Input } from "./Input";
@@ -87,7 +88,7 @@ enum ContentType {
   Twitter = "twitter",
 }
 
-export function CreateContentModal({ open, onClose }) {
+ export const CreateContentModal = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
   const titleRef = useRef<HTMLInputElement>(null);
   const linkRef = useRef<HTMLInputElement>(null);
   const [type, setType] = useState(ContentType.Youtube);
