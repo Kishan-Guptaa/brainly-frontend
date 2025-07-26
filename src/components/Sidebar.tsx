@@ -133,7 +133,7 @@ export function Sidebar() {
       {/* Top Bar for Mobile */}
       <div className="md:hidden flex items-center justify-between p-4 border-b bg-white">
         <div className="flex items-center text-xl font-semibold">
-          <Logo className="w-6 h-6 mr-2" />
+          <Logo  />
           Brainly
         </div>
         <button onClick={() => setIsOpen(true)}>
