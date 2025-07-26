@@ -6,7 +6,7 @@ import { Dashboard } from './pages/dashboard'
 // import { Dashboard } from './pages/dashboard'
 
 function App() {
-    return <BrowserRouter>
+    return <BrowserRouter basename="/brainly-frontend">
         <Routes>
              {/* Redirect home route to dashboard */}
                 <Route path="/" element={<Navigate to="/dashboard" />} />
