@@ -126,7 +126,8 @@ export function Sidebar() {
     localStorage.removeItem("token");
     setIsAuthenticated(false);
     // window.location.href = "/brainly-frontend/dashboard";
-     navigate("/dashboard");
+     navigate("/brainly-frontend/dashboard");
+
   };
 
   return (
