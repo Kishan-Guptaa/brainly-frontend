@@ -125,7 +125,7 @@ export function Sidebar() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     setIsAuthenticated(false);
-    window.location.href = "/dashboard";
+    window.location.href = "/brainly-frontend/dashboard";
   };
 
   return (
