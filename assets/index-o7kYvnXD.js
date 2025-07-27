@@ -92,7 +92,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const Bv=[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]],Hv=qh("x",Bv);function Lv(){const u=Ia(),[c,f]=M.useState(!1),[r,s]=M.useState(!1);M.useEffect(()=>{const m=localStorage.getItem("token");f(!!m)},[]);const d=()=>{localStorage.removeItem("token"),f(!1),window.location.href="/dashboard"};return _.jsxs(_.Fragment,{children:[_.jsxs("div",{className:"md:hidden flex items-center justify-between p-4 border-b bg-white",children:[_.jsxs("div",{className:"flex items-center text-xl font-semibold",children:[_.jsx(k0,{}),"Brainly"]}),_.jsx("button",{onClick:()=>s(!0),children:_.jsx(jv,{className:"w-6 h-6"})})]}),_.jsxs("div",{className:`
+ */const Bv=[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]],Hv=qh("x",Bv);function Lv(){const u=Ia(),[c,f]=M.useState(!1),[r,s]=M.useState(!1);M.useEffect(()=>{const m=localStorage.getItem("token");f(!!m)},[]);const d=()=>{localStorage.removeItem("token"),f(!1),u("/dashboard")};return _.jsxs(_.Fragment,{children:[_.jsxs("div",{className:"md:hidden flex items-center justify-between p-4 border-b bg-white",children:[_.jsxs("div",{className:"flex items-center text-xl font-semibold",children:[_.jsx(k0,{}),"Brainly"]}),_.jsx("button",{onClick:()=>s(!0),children:_.jsx(jv,{className:"w-6 h-6"})})]}),_.jsxs("div",{className:`
           fixed top-0 left-0 h-full w-72 bg-white border-r p-6 z-50
           flex flex-col justify-between
           transition-transform duration-300 ease-in-out
